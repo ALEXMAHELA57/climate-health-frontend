@@ -1,13 +1,13 @@
-# render.yaml — for automatic frontend deployment
+# render.yaml — Vite/React frontend deployment on Render
+
 services:
   - type: web
     name: climate-health-frontend
     env: static
-    repo: https://github.com/ALEXMAHELA57/climate-health-frontend  # 🔁 replace with your GitHub repo URL
-    buildCommand: npm run build
-    staticPublishPath: dist       # if using Vite (use "build" if Create React App)
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
     envVars:
       - key: NODE_VERSION
         value: 18
-      - key: REACT_APP_API_BASE
+      - key: VITE_API_BASE
         value: https://climate-health-backend-fexw.onrender.com/api/
