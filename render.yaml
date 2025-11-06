@@ -1,4 +1,4 @@
-# render.yaml — Vite/React frontend deployment on Render
+# render.yaml — for Vite/React frontend deployment on Render
 
 services:
   - type: web
