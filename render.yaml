@@ -3,7 +3,7 @@ services:
   - type: web
     name: climate-health-frontend
     env: static
-    repo: https://github.com/yourusername/climate-health-frontend  # 🔁 replace with your GitHub repo URL
+    repo: https://github.com/ALEXMAHELA57/climate-health-frontend  # 🔁 replace with your GitHub repo URL
     buildCommand: npm run build
     staticPublishPath: dist       # if using Vite (use "build" if Create React App)
     envVars:
