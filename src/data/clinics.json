@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.2695, -6.7924] },
+      "properties": { "name": "Kliniki ya Kinondoni", "district": "Kinondoni", "type": "Clinic", "phone": "+255 712 000 111" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.2095, -6.85] },
+      "properties": { "name": "Amana Regional Hospital", "district": "Ilala", "type": "Regional Hospital", "phone": "+255 22 211 5157" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.304, -6.82] },
+      "properties": { "name": "Temeke Hospital", "district": "Temeke", "type": "District Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.225, -6.77] },
+      "properties": { "name": "Mikocheni Health Center", "district": "Mikocheni", "type": "Health Center" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.7516, -6.1730] },
+      "properties": { "name": "Dodoma General Hospital", "district": "Dodoma", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [37.664, -6.825] },
+      "properties": { "name": "Morogoro Regional Hospital", "district": "Morogoro", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [36.682, -3.369] },
+      "properties": { "name": "Mount Meru Regional Hospital", "district": "Arusha", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.904, -2.516] },
+      "properties": { "name": "Bugando Medical Centre", "district": "Mwanza", "type": "Zonal Referral Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.45, -8.9] },
+      "properties": { "name": "Mbeya Zonal Referral Hospital", "district": "Mbeya", "type": "Zonal Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [34.770, -8.0] },
+      "properties": { "name": "Iringa Regional Hospital", "district": "Iringa", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [38.620, -5.066] },
+      "properties": { "name": "Bombo Regional Hospital", "district": "Tanga", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.195, -6.255] },
+      "properties": { "name": "Mnazi Mmoja Hospital", "district": "Mjini Magharibi", "type": "Referral Hospital", "phone": "+255 24 223 3456" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.750, -5.0] },
+      "properties": { "name": "Abdalla Mzee Hospital", "district": "Kaskazini Pemba", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.80, -5.4] },
+      "properties": { "name": "Chake Chake Hospital", "district": "Kusini Pemba", "type": "District Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [30.665, -2.525] },
+      "properties": { "name": "Kagera Regional Hospital", "district": "Bukoba", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [31.55, -3.40] },
+      "properties": { "name": "Geita Regional Hospital", "district": "Geita", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [33.46, -3.67] },
+      "properties": { "name": "Shinyanga Regional Hospital", "district": "Shinyanga", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [32.56, -5.02] },
+      "properties": { "name": "Tabora Regional Hospital", "district": "Tabora", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [30.42, -7.74] },
+      "properties": { "name": "Rukwa Regional Hospital", "district": "Rukwa", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [35.25, -10.68] },
+      "properties": { "name": "Ruvuma Regional Hospital", "district": "Songea", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.37, -10.27] },
+      "properties": { "name": "Lindi Regional Hospital", "district": "Lindi", "type": "Regional Hospital" }
+    },
+    {
+      "type": "Feature",
+      "geometry": { "type": "Point", "coordinates": [39.61, -10.27] },
+      "properties": { "name": "Ligula Hospital", "district": "Mtwara", "type": "Regional Hospital" }
+    }
+  ]
+}
