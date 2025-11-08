@@ -1,15 +1,7 @@
 // 🌍 src/services/api.js
+import { API_BASE } from "../config.js"; // Import the backend base URL
 
 const OPEN_METEO = "https://api.open-meteo.com/v1/forecast";
-
-// Dynamically switch between local and hosted Django API
-const isLocal =
-  window.location.hostname === "localhost" ||
-  window.location.hostname === "127.0.0.1";
-
-export const API_BASE = isLocal
-  ? "http://127.0.0.1:8000/api/"
-  : "https://climate-health-backend-fexw.onrender.com/api/";
 
 // ---- DISTRICT COORDINATES ----
 export const DISTRICT_COORDS = {
@@ -46,7 +38,7 @@ export const DISTRICT_COORDS = {
   "Kusini Pemba": { lat: -5.3167, lon: 39.7333 },
 };
 
-// ---- FETCH ALERTS ----
+// ---- ALERTS ----
 export async function listAlerts() {
   const res = await fetch(`${API_BASE}alerts/`);
   if (!res.ok) throw new Error("Failed to fetch alerts");
@@ -64,7 +56,7 @@ export async function checkSymptoms(symptoms) {
   return res.json();
 }
 
-// ---- SUBSCRIBE ----
+// ---- SUBSCRIPTIONS ----
 export async function saveSubscription({ name, district, channel }) {
   const res = await fetch(`${API_BASE}subscribe/`, {
     method: "POST",

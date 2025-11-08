@@ -5,3 +5,5 @@ const isLocal =
 export const API_BASE = isLocal
   ? "http://127.0.0.1:8000/api/"
   : "https://climate-health-backend-fexw.onrender.com/api/";
+
+console.log("🌍 API Base Loaded:", API_BASE);
