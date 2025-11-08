@@ -1,6 +1,15 @@
 // 🌍 src/services/api.js
+
 const OPEN_METEO = "https://api.open-meteo.com/v1/forecast";
-const API_BASE = "https://climate-health-backend-fexw.onrender.com/api/"; // your hosted Django backend
+
+// Dynamically switch between local and hosted Django API
+const isLocal =
+  window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1";
+
+export const API_BASE = isLocal
+  ? "http://127.0.0.1:8000/api/"
+  : "https://climate-health-backend-fexw.onrender.com/api/";
 
 // ---- DISTRICT COORDINATES ----
 export const DISTRICT_COORDS = {
@@ -34,17 +43,17 @@ export const DISTRICT_COORDS = {
   "Kusini Unguja": { lat: -6.4167, lon: 39.5500 },
   "Mjini Magharibi": { lat: -6.1667, lon: 39.2000 },
   "Kaskazini Pemba": { lat: -5.0000, lon: 39.7500 },
-  "Kusini Pemba": { lat: -5.3167, lon: 39.7333 }
+  "Kusini Pemba": { lat: -5.3167, lon: 39.7333 },
 };
 
-// ---- FETCH ALERTS FROM DJANGO BACKEND ----
+// ---- FETCH ALERTS ----
 export async function listAlerts() {
   const res = await fetch(`${API_BASE}alerts/`);
   if (!res.ok) throw new Error("Failed to fetch alerts");
   return res.json();
 }
 
-// ---- SYMPTOM CHECKER API ----
+// ---- SYMPTOM CHECKER ----
 export async function checkSymptoms(symptoms) {
   const res = await fetch(`${API_BASE}symptoms/`, {
     method: "POST",
@@ -55,7 +64,7 @@ export async function checkSymptoms(symptoms) {
   return res.json();
 }
 
-// ---- SUBSCRIBE API ----
+// ---- SUBSCRIBE ----
 export async function saveSubscription({ name, district, channel }) {
   const res = await fetch(`${API_BASE}subscribe/`, {
     method: "POST",
@@ -66,7 +75,7 @@ export async function saveSubscription({ name, district, channel }) {
   return res.json();
 }
 
-// ---- FETCH WEATHER FORECAST ----
+// ---- WEATHER FORECAST ----
 export async function fetchForecastForDistrict(district) {
   const coord = DISTRICT_COORDS[district] || DISTRICT_COORDS["Dar es Salaam"];
   const url = `${OPEN_METEO}?latitude=${coord.lat}&longitude=${coord.lon}` +
@@ -77,8 +86,9 @@ export async function fetchForecastForDistrict(district) {
   const data = await res.json();
   return { district, coord, data };
 }
-// ---- CHAT GUIDANCE API ----
-export async function chatGuidance({ message, lang = 'en' }) {
+
+// ---- CHAT GUIDANCE ----
+export async function chatGuidance({ message, lang = "en" }) {
   const res = await fetch(`${API_BASE}chat/`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

@@ -1,0 +1,15 @@
+{
+  "name": "PAWHA Climate & Public Health",
+  "short_name": "PAWHA",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F0DB",
+  "theme_color": "#088383",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    }
+  ]
+}
